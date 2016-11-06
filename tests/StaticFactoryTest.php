@@ -25,7 +25,7 @@ class StaticFactoryTest extends TestCase
     public function testCanCreateStringFormatter()
     {
         $this->assertInstanceOf(
-            'O\DesignPatterns\Creational\StaticFactory\StringNumber',
+            'O\DesignPatterns\Creational\StaticFactory\FormatString',
             StaticFactory::factory('string')
         );
     }
