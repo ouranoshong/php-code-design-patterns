@@ -7,3 +7,15 @@ The collection of code design pattern example.
 Learning and practicing code design mode, by reading [Design patterns php](http://designpatternsphp.readthedocs.io/en/latest/).
 
 
+## Pattern List
+
+1. Creational
+  1. Abstract Factory
+  1. Builder
+  1. Factory Method
+  1. Multiton
+  1. Pool
+  1. Prototype
+  1. Simple Factory
+  1. Singleton
+  1. Static Factory
