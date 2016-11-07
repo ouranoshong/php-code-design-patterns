@@ -24,14 +24,14 @@ class PrototypeTest  extends TestCase
              $book = clone $FooBook;
              $book->setTitle('Foo Book No ' . $i);
              $this->assertInstanceOf('O\DesignPatterns\Creational\Prototype\FooBookPrototype', $book);
-             $this->assertSame('Foo Book No ' . $i, $FooBook->getTitle());
+             $this->assertSame('Foo Book No ' . $i, $book->getTitle());
          }
 
          for($i = 0; $i < 5; $i++){
              $book = clone $BarBook;
              $book->setTitle('Bar Book No ' . $i);
              $this->assertInstanceOf('O\DesignPatterns\Creational\Prototype\BarBookPrototype', $book);
-             $this->assertSame('Bar Book No ' . $i, $BarBook->getTitle());
+             $this->assertSame('Bar Book No ' . $i, $book->getTitle());
          }
      }
 }

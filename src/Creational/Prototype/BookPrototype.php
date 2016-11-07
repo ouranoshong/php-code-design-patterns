@@ -11,7 +11,7 @@ namespace O\DesignPatterns\Creational\Prototype;
 
 abstract class BookPrototype
 {
-   protected $title;
+    protected $title;
 
     protected $category;
 
