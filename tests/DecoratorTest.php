@@ -31,6 +31,6 @@ class DecoratorTest extends TestCase
     public function testXmlDecorator()
     {
         $service = new Decorator\XmlRenderer($this->service);
-        $this->assertSame('<?xml version="1.0"?><content>foobar</content>', $service->renderData());
+        $this->assertEquals('<?xml version="1.0"?><content>foobar</content>', $service->renderData());
     }
 }
