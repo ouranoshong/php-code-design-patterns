@@ -17,7 +17,7 @@ abstract class Service
 
     public function __construct(FormatterInterface $printer)
     {
-        $this->implementation = $printer;
+        $this->setImplementation($printer);
     }
 
     public function setImplementation(FormatterInterface $printer)

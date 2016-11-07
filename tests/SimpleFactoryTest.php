@@ -19,5 +19,6 @@ class SimpleFactoryTest  extends TestCase
         $bicycle = (new SimpleFactory())->createBicycle();
 
         $this->assertInstanceOf('O\DesignPatterns\Creational\SimpleFactory\Bicycle', $bicycle);
+        $this->assertSame('driveTo', $bicycle->driveTo());
     }
 }

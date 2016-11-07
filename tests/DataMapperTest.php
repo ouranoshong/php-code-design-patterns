@@ -23,6 +23,8 @@ class DataMapperTest extends TestCase
         $user = $mapper->findByid(1);
 
         $this->assertInstanceOf('O\DesignPatterns\Structural\DataMapper\User', $user);
+        $this->assertSame('domnikl', $user->getUsername());
+        $this->assertSame('liebler.dominik@gmail.com', $user->getEmail());
 
     }
 

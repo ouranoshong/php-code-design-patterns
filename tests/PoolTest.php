@@ -22,6 +22,8 @@ class PoolTest extends TestCase
 
          $this->assertCount(2, $pool);
          $this->assertNotSame($worker1, $worker2);
+         $this->assertSame('text', $worker1->run('txet'));
+         $this->assertSame('text', $worker2->run('txet'));
      }
 
      public function testCanGetSameInstanceTwiceWhenDisposingItFirst()
@@ -35,5 +37,8 @@ class PoolTest extends TestCase
 
          $this->assertCount(1, $pool);
          $this->assertSame($worker1, $worker2);
+
+         $this->assertSame('text', $worker1->run('txet'));
+         $this->assertSame('text', $worker2->run('txet'));
      }
 }

@@ -13,6 +13,6 @@ class Bicycle
 {
     public function driveTo()
     {
-
+        return 'driveTo';
     }
 }
