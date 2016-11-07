@@ -50,8 +50,17 @@ class FactoryMethodTest  extends TestCase
      * @expectedException \InvalidArgumentException
      * @expectedExceptionMessage spaceship is not a valid vehicle
      */
-    public function testUnknownType()
+    public function testUnknownTypeInItalianFactory()
     {
         (new ItalianFactory())->create('spaceship');
+    }
+
+    /**
+     * @expectedException \InvalidArgumentException
+     * @expectedExceptionMessage spaceship is not a valid vehicle
+     */
+    public function testUnknownTypeInGermanyFactory()
+    {
+        (new GermanFactory())->create('spaceship');
     }
 }
