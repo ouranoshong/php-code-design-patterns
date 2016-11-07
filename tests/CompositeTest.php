@@ -11,7 +11,7 @@ namespace O\Tests;
 
 use PHPUnit\Framework\TestCase;
 
-use O\DesignPatterns\Structual\Composite;
+use O\DesignPatterns\Structural\Composite;
 
 class CompositeTest extends TestCase
 {

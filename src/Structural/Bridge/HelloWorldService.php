@@ -6,7 +6,7 @@
  * Time: 11:00 AM
  */
 
-namespace O\DesignPatterns\Structual\Bridge;
+namespace O\DesignPatterns\Structural\Bridge;
 
 
 class HelloWorldService extends Service

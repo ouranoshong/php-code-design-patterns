@@ -6,7 +6,7 @@
  * Time: 11:23 AM
  */
 
-namespace O\DesignPatterns\Structual\Composite;
+namespace O\DesignPatterns\Structural\Composite;
 
 
 interface RenderableInterface

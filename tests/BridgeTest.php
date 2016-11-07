@@ -8,9 +8,9 @@
 
 namespace O\Tests;
 
-use O\DesignPatterns\Structual\Bridge\HelloWorldService;
-use O\DesignPatterns\Structual\Bridge\HtmlFormatter;
-use O\DesignPatterns\Structual\Bridge\PlainTextFormatter;
+use O\DesignPatterns\Structural\Bridge\HelloWorldService;
+use O\DesignPatterns\Structural\Bridge\HtmlFormatter;
+use O\DesignPatterns\Structural\Bridge\PlainTextFormatter;
 use PHPUnit\Framework\TestCase;
 
 class BridgeTest extends TestCase

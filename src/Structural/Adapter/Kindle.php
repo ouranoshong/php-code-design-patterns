@@ -6,7 +6,7 @@
  * Time: 10:37 AM
  */
 
-namespace O\DesignPatterns\Structual\Adapter;
+namespace O\DesignPatterns\Structural\Adapter;
 
 
 class Kindle implements EBookInterface

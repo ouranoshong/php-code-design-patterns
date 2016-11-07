@@ -6,7 +6,7 @@
  * Time: 11:30 AM
  */
 
-namespace O\DesignPatterns\Structual\Composite;
+namespace O\DesignPatterns\Structural\Composite;
 
 
 class TextElement implements RenderableInterface

@@ -6,7 +6,7 @@
  * Time: 10:33 AM
  */
 
-namespace O\DesignPatterns\Structual\Adapter;
+namespace O\DesignPatterns\Structural\Adapter;
 
 
 interface BookInterface

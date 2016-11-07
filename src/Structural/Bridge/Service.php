@@ -6,10 +6,10 @@
  * Time: 10:55 AM
  */
 
-namespace O\DesignPatterns\Structual\Bridge;
+namespace O\DesignPatterns\Structural\Bridge;
 
 
-use O\DesignPatterns\Creational\StaticFactory\FormatterInterface;
+use O\DesignPatterns\Structural\Bridge\FormatterInterface;
 
 abstract class Service
 {

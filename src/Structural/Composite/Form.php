@@ -6,7 +6,7 @@
  * Time: 11:26 AM
  */
 
-namespace O\DesignPatterns\Structual\Composite;
+namespace O\DesignPatterns\Structural\Composite;
 
 
 class Form implements RenderableInterface

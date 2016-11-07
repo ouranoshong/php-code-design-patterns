@@ -6,7 +6,7 @@
  * Time: 10:53 AM
  */
 
-namespace O\DesignPatterns\Structual\Bridge;
+namespace O\DesignPatterns\Structural\Bridge;
 
 
 class HtmlFormatter implements FormatterInterface

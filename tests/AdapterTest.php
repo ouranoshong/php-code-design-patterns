@@ -9,9 +9,9 @@
 namespace O\Tests;
 
 
-use O\DesignPatterns\Structual\Adapter\Book;
-use O\DesignPatterns\Structual\Adapter\EBookAdapter;
-use O\DesignPatterns\Structual\Adapter\Kindle;
+use O\DesignPatterns\Structural\Adapter\Book;
+use O\DesignPatterns\Structural\Adapter\EBookAdapter;
+use O\DesignPatterns\Structural\Adapter\Kindle;
 use PHPUnit\Framework\TestCase;
 
 class AdapterTest extends TestCase

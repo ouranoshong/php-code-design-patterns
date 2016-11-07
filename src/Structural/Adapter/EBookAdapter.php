@@ -6,7 +6,7 @@
  * Time: 10:35 AM
  */
 
-namespace O\DesignPatterns\Structual\Adapter;
+namespace O\DesignPatterns\Structural\Adapter;
 
 
 class EBookAdapter implements BookInterface

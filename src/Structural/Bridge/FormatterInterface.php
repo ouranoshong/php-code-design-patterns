@@ -6,7 +6,7 @@
  * Time: 10:51 AM
  */
 
-namespace O\DesignPatterns\Structual\Bridge;
+namespace O\DesignPatterns\Structural\Bridge;
 
 
 interface FormatterInterface
