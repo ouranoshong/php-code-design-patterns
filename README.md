@@ -23,3 +23,4 @@ Learning and practicing code design mode, by reading [Design patterns php](http:
   1. Adapter/Wrapper
   1. Bridge
   1. Composite 
+  1. Data Mapper
