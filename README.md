@@ -21,3 +21,4 @@ Learning and practicing code design mode, by reading [Design patterns php](http:
   1. Static Factory
 1. Structural
   1. Adapter/Wrapper
+  1. Bridge
