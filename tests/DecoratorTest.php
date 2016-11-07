@@ -31,6 +31,12 @@ class DecoratorTest extends TestCase
     public function testXmlDecorator()
     {
         $service = new Decorator\XmlRenderer($this->service);
-        $this->assertEquals('<?xml version="1.0"?><content>foobar</content>', str_replace("\r\n", $service->renderData()));
+
+        $doc = new \DOMDocument();
+        $doc->appendChild($doc->createElement('content', 'foobar'));
+
+        $xml = $doc->saveXML();
+
+        $this->assertEquals($xml, str_replace("\r\n","", $service->renderData()));
     }
 }
