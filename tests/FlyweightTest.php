@@ -32,6 +32,6 @@ class FlyweightTest extends TestCase
         }
 
 
-        $this->assertSame(count($character), count($factory));
+        $this->assertSame(count($this->characters), count($factory));
     }
 }
