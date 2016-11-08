@@ -32,3 +32,4 @@ Learning and practicing code design mode, by reading [Design patterns php](http:
   1. Fluent Interface
   1. Flyweight Interface
   1. Proxy
+  1. Registry
