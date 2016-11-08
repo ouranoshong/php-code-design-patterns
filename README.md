@@ -6,6 +6,8 @@
 The collection of code design pattern example.
 Learning and practicing code design mode, by reading [Design patterns php](http://designpatternsphp.readthedocs.io/en/latest/).
 
+## Requirement
+* PHP 7
 
 ## Pattern List
 
@@ -28,3 +30,4 @@ Learning and practicing code design mode, by reading [Design patterns php](http:
   1. Dependency Injection
   1. Facade
   1. Fluent Interface
+  1. Flyweight Interface
