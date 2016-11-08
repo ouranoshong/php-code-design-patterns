@@ -30,6 +30,8 @@ class Sql
     public function from(string $table, string $alias): Sql
     {
         $this->from[] = $table.' AS '.$alias;
+
+        return $this;
     }
 
     public function where(string $condition): Sql
