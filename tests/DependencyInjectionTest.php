@@ -18,14 +18,7 @@ class DependencyInjectionTest extends TestCase
     public function testDependencyInjection()
     {
         $config = new DatabaseConfiguration('localhost', 3306, 'hong', '123456');
-
-        $this->assertSame('localhost', $config->getHost());
-        $this->assertSame(3306, $config->getPort());
-        $this->assertSame('hong', $config->getUsername());
-        $this->assertSame('123456', $config->getPassword());
-
         $connection =  new DatabaseConnection($config);
-
         $this->assertEquals('hong:123456@localhost:3306', $connection->getDsn());
     }
 }
