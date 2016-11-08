@@ -30,5 +30,8 @@ class FlyweightTest extends TestCase
                 $this->assertEquals(sprintf('Character %s with font %s', $character, $font), $rendered);
             }
         }
+
+
+        $this->assertSame(count($character), $factory);
     }
 }
