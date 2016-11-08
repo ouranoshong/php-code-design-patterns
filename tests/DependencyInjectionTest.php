@@ -11,8 +11,9 @@ namespace O\Tests;
 
 use O\DesignPatterns\Structural\DependencyInjection\DatabaseConfiguration;
 use O\DesignPatterns\Structural\DependencyInjection\DatabaseConnection;
+use PHPUnit\Framework\TestCase;
 
-class DependencyInjectionTest
+class DependencyInjectionTest extends TestCase
 {
     public function testDependencyInjection()
     {
