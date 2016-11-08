@@ -24,4 +24,14 @@ class ProxyTest extends TestCase
         $proxy->username = 'tom';
         $this->assertSame('tom', $proxy->username);
     }
+
+    /**
+     * @expectedException \OutOfRangeException
+     */
+    public function testCanNoGetDoNotExistKey()
+    {
+        $proxy = new RecordProxy(['username'=>'tony']);
+
+        $proxy->user;
+    }
 }
