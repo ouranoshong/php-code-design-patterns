@@ -24,7 +24,7 @@ class IteratorTest extends TestCase
 
         $books = [];
 
-        foreach ($bookList as $book)
+        foreach ($bookList as $key => $book)
         {
             $books[] = $book->getAuthorAndTitle();
         }
