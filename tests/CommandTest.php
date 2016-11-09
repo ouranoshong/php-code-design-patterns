@@ -38,10 +38,6 @@ class CommandTest extends TestCase
 
         $this->assertTrue($this->getObjectAttribute($receiver, 'enableDate'));
         $this->assertContains('Hello World', $receiver->getOutput());
-
-        $receiver->disableDate();
-        $this->assertFalse($this->getObjectAttribute($receiver, 'enableDate'));
-        $this->assertEquals('Hello World', $receiver->getOutput());
     }
 
     public function testReceiverWriteWithDisableDate()

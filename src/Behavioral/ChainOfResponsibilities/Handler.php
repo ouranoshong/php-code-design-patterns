@@ -8,6 +8,7 @@
 
 namespace O\DesignPatterns\Behavioral\ChainOfResponsibilities;
 
+use Psr\Http\Message\RequestInterface;
 
 abstract class Handler
 {
@@ -31,5 +32,5 @@ abstract class Handler
         return $processed;
     }
 
-    abstract protected function processing(RequestInsterface $request);
+    abstract protected function processing(RequestInterface $request);
 }

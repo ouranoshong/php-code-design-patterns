@@ -10,7 +10,7 @@ namespace O\DesignPatterns\Behavioral\ChainOfResponsibilities\Response;
 
 
 use O\DesignPatterns\Behavioral\ChainOfResponsibilities\Handler;
-use O\DesignPatterns\Behavioral\ChainOfResponsibilities\RequestInsterface;
+use Psr\Http\Message\RequestInterface;
 
 class FastStorage extends Handler
 {
@@ -24,7 +24,7 @@ class FastStorage extends Handler
         $this->data = $data;
     }
 
-    protected function processing(RequestInsterface $request)
+    protected function processing(RequestInterface $request)
     {
         $key = sprintf(
             '%s?%s',
