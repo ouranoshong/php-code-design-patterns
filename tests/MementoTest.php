@@ -36,4 +36,12 @@ class MementoTest extends TestCase
         $this->assertEquals(State::STATE_CLOSED, (string) $ticket->getState());
 
     }
+
+    /**
+     * @expectedException \InvalidArgumentException
+     */
+    public function testUnknownState()
+    {
+        new State('unknown');
+    }
 }
