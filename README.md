@@ -40,3 +40,4 @@ Learning and practicing code design mode, by reading [Design patterns php](http:
   1. Mediator
   1. Memento
   1. NullObject
+  1. Observer
