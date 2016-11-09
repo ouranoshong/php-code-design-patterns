@@ -35,3 +35,4 @@ Learning and practicing code design mode, by reading [Design patterns php](http:
   1. Registry
 1. Behavioral
   1. Chain Of Responsibilities
+  1. Command
