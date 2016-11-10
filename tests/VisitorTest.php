@@ -52,7 +52,7 @@ class VisitorTest extends TestCase
     public function testCanGetGroupName()
     {
         $Group = new Visitor\Group('Admin');
-        $this->assertContains('admin', $Group->getName());
+        $this->assertContains('Admin', $Group->getName());
 
     }
 }
