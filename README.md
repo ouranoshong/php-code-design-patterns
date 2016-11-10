@@ -48,3 +48,4 @@ Learning and practicing code design mode, by reading [Design patterns php](http:
   1. Visitor
 1. More
   1. Delegation
+  1. ServiceLocator
