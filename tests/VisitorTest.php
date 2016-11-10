@@ -27,7 +27,7 @@ class VisitorTest extends TestCase
     public function provideRoles()
     {
         return [
-            [new Visitor\User('Dominik')],
+            [new Visitor\User('hong')],
             [new Visitor\Group('Administrators')],
         ];
     }
@@ -41,5 +41,18 @@ class VisitorTest extends TestCase
     {
         $role->accept($this->visitor);
         $this->assertSame($role, $this->visitor->getVisited()[0]);
+    }
+
+    public function testCanGetUserName()
+    {
+        $User = new Visitor\User('hong');
+        $this->assertSame('hong', $User->getName());
+    }
+
+    public function testCanGetGroupName()
+    {
+        $Group = new Visitor\Group('Admin');
+        $this->assertSame('admin', $Group->getName());
+
     }
 }
