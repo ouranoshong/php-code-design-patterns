@@ -46,13 +46,13 @@ class VisitorTest extends TestCase
     public function testCanGetUserName()
     {
         $User = new Visitor\User('hong');
-        $this->assertSame('hong', $User->getName());
+        $this->assertContains('hong', $User->getName());
     }
 
     public function testCanGetGroupName()
     {
         $Group = new Visitor\Group('Admin');
-        $this->assertSame('admin', $Group->getName());
+        $this->assertContains('admin', $Group->getName());
 
     }
 }
