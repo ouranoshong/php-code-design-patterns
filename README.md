@@ -43,3 +43,4 @@ Learning and practicing code design mode, by reading [Design patterns php](http:
   1. Observer
   1. Specification
   1. State
+  1. Strategy
