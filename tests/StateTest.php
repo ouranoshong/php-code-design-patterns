@@ -43,7 +43,7 @@ class StateTest extends TestCase
      */
     public function testThrowsExceptionWhenTryingToShippingShipOrder()
     {
-        $order = (new OrderRepository())->findById(1);
+        $order = (new OrderRepository())->findById(2);
         $order->shipOrder();
     }
 }
