@@ -45,3 +45,4 @@ Learning and practicing code design mode, by reading [Design patterns php](http:
   1. State
   1. Strategy
   1. Template Method
+  1. Visitor
