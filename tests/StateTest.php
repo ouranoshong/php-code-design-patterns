@@ -46,4 +46,20 @@ class StateTest extends TestCase
         $order = (new OrderRepository())->findById(2);
         $order->shipOrder();
     }
+
+    /**
+     * @expectedException \InvalidArgumentException
+     */
+    public function testThrowsExceptionWhenTryingToFindUnknownId()
+    {
+        (new OrderRepository())->findById(5);
+    }
+
+    /**
+     * @expectedException \InvalidArgumentException
+     */
+    public function testThrowsExceptionWhenTryingToFindUnknownStateObject()
+    {
+        (new OrderRepository())->findById(3);
+    }
 }
