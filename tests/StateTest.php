@@ -28,6 +28,7 @@ class StateTest extends TestCase
         $order->completeOrder();
         $this->assertEquals('completed', $order->getStatus());
     }
+
     /**
      * @expectedException \Exception
      */
@@ -35,5 +36,14 @@ class StateTest extends TestCase
     {
         $order = (new OrderRepository())->findById(1);
         $order->completeOrder();
+    }
+
+    /**
+     * @expectedException \Exception
+     */
+    public function testThrowsExceptionWhenTryingToShippingShipOrder()
+    {
+        $order = (new OrderRepository())->findById(1);
+        $order->shipOrder();
     }
 }

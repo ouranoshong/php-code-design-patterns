@@ -75,4 +75,13 @@ class StrategyTest extends TestCase
         $this->assertEquals($expected, $firstElement);
     }
 
+    /**
+     * @expectedException \LogicException
+     */
+    public function testThrowExceptionWithoutComparator()
+    {
+        $obj = new ObjectCollection([]);
+        $obj->sort();
+    }
+
 }
