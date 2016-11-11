@@ -78,6 +78,6 @@ class MemoryTest extends MemoryStorage {
 
     public function retrieve(int $id): array
     {
-        return null;
+        return [];
     }
 }
