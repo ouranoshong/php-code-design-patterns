@@ -76,7 +76,7 @@ class RepositoryTest extends TestCase
 
         $Memory->expects($this->once())
             ->method('retrieve')
-            ->with($this->returnValue(null));
+            ->with($this->anything(), $this->returnValue(null));
 
         (new PostRepository($Memory))->findById(1);
     }
