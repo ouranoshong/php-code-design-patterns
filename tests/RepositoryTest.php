@@ -64,20 +64,4 @@ class RepositoryTest extends TestCase
     {
         (new MemoryStorage())->delete(1);
     }
-
-    /**
-     * @expectedException \OutOfRangeException
-     */
-    public function testThrowsExceptionWhenFindByUnknownId()
-    {
-        (new PostRepository(new MemoryTest))->findById(1);
-    }
-}
-
-class MemoryTest extends MemoryStorage {
-
-    public function retrieve(int $id): array
-    {
-        return [];
-    }
 }

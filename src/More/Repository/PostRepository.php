@@ -20,13 +20,7 @@ class PostRepository
 
     public function findById(int $id): Post
     {
-        $arrayData = $this->persistence->retrieve($id);
-
-        if (is_null($arrayData)) {
-            throw new \InvalidArgumentException(sprintf('Post with ID %d does not exist', $id));
-        }
-
-        return Post::fromState($arrayData);
+        return Post::fromState($this->persistence->retrieve($id));
     }
 
     public function save(Post $post)
