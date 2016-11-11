@@ -64,4 +64,20 @@ class RepositoryTest extends TestCase
     {
         (new MemoryStorage())->delete(1);
     }
+
+    /**
+     * @expectedException \OutOfRangeException
+     */
+    public function testThrowsExceptionWhenFindByUnknownId()
+    {
+        $Memory = $this->getMockBuilder(MemoryStorage::class)
+            ->setMethods(['retrieve'])
+            ->getMock();
+
+        $Memory->expects($this->once())
+            ->method('retrieve')
+            ->with($this->returnValue(null));
+
+        (new PostRepository($Memory))->findById(1);
+    }
 }
