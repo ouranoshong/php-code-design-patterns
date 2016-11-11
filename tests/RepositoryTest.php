@@ -70,14 +70,14 @@ class RepositoryTest extends TestCase
      */
     public function testThrowsExceptionWhenFindByUnknownId()
     {
-        $Memory = $this->getMockBuilder(MemoryStorage::class)
-            ->setMethods(['retrieve'])
-            ->getMock();
+        (new PostRepository(new MemoryTest))->findById(1);
+    }
+}
 
-        $Memory->expects($this->once())
-            ->method('retrieve')
-            ->with($this->anything(), $this->returnValue(null));
+class MemoryTest extends MemoryStorage {
 
-        (new PostRepository($Memory))->findById(1);
+    public function retrieve(int $id): array
+    {
+        return null;
     }
 }
