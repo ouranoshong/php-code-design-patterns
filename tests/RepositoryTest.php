@@ -30,9 +30,9 @@ class RepositoryTest extends TestCase
 
     public function testCanDealWithPost()
     {
-        $post = new Post(null, 'Repository Pattern', 'Design Patterns PHP');
+        $post = new Post(1, 'Repository Pattern', 'Design Patterns PHP');
 
-        $this->assertSame(null, $post->getId());
+        $this->assertSame(1, $post->getId());
         $this->assertSame('Repository Pattern', $post->getTitle());
         $this->assertSame('Design Patterns PHP', $post->getText());
 
@@ -43,7 +43,7 @@ class RepositoryTest extends TestCase
         $Memory = new MemoryStorage();
         $id = $Memory->persist(['text'=> 'test']);
         $data = $Memory->retrieve($id);
-        $this->assertSame(['id'=> $id, 'text' => 'test'], $data);
+        $this->assertSame(['text' => 'test', 'id'=> $id], $data);
 
         $Memory->delete($id);
         $this->assertAttributeEmpty('data', $Memory);
