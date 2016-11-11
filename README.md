@@ -50,3 +50,4 @@ Learning and practicing code design mode, by reading [Design patterns php](http:
   1. Delegation
   1. ServiceLocator
   1. Repository
+  1. Entity-Attribute-Value (EAV)
