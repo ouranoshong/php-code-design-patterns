@@ -22,8 +22,13 @@ class EAVTest extends TestCase
         $colorSilver = new Value($colorAttribute, 'silver');
         $colorBlack = new Value($colorAttribute, 'black');
 
+        $this->assertTrue($colorAttribute->getValues()->contains($colorSilver));
+        $this->assertTrue($colorAttribute->getValues()->contains($colorBlack));
+
         $memoryAttribute = new Attribute('memory');
         $memory8Gb = new Value($memoryAttribute, '8GB');
+
+        $this->assertTrue($memoryAttribute->getValues()->contains($memory8Gb));
 
         $entity = new Entity('MacBook Pro', [$colorSilver, $colorBlack, $memory8Gb]);
         $this->assertEquals('MacBook Pro, color: silver, color: black, memory: 8GB', (string) $entity);
